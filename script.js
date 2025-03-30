@@ -258,7 +258,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Clientele section loaded successfully!");
 });
 
-// contact form script
+// Contact form script
 document.getElementById("contactForm").addEventListener("submit", async function (event) {
     event.preventDefault();
 
@@ -272,21 +272,23 @@ document.getElementById("contactForm").addEventListener("submit", async function
     const responseMessage = document.getElementById("responseMessage");
 
     try {
-        const response = await fetch("http://localhost:5500/send", {
+        const response = await fetch("http://44.199.254.215:5500/send", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(formData)
+            body: JSON.stringify(formData), // ✅ Use formData instead of data
         });
 
-        const data = await response.json();
-        responseMessage.textContent = data.message;
+        const result = await response.json();
+        responseMessage.textContent = result.message;
         responseMessage.style.color = "green";
         this.reset(); // Clear form after submission
     } catch (error) {
+        console.error("Fetch error:", error);
         responseMessage.textContent = "Failed to send message!";
         responseMessage.style.color = "red";
     }
 });
+
 
 // for events countdown
 function countdown(id, eventDate) {
