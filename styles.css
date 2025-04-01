@@ -217,11 +217,11 @@ header img {
 }
 
 .intro_container {
-    background-color: #ff8000;
+    background-color: #ff8000cc;
     height: auto;
     width: 42vw;
     /* margin-right: 80px; */
-    margin-top: 330px;
+    margin-top: 325px;
 }
 
 .intro_container h1,

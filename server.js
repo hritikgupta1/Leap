@@ -32,7 +32,7 @@ app.post("/send", (req, res) => {
     res.json({ message: "Message sent successfully!" });
     const mailOptions = {
         from: email,
-        to: "hritikgupta056@gmail.com",
+        to: "info@lillyevents.in",
         replyTo: email,
         subject: `New Contact Form Submission from ${name}`,
         text: `Name: ${name}\nEmail: ${email}\nMobile No.: ${Mobile}\nMessage: ${message}`
