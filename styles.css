@@ -436,7 +436,7 @@ button:active {
 
 .service-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 20px;
 }
@@ -833,6 +833,7 @@ footer {
     .service-box {
         background: #fff;
         width: 25vw;
+        /* width: 17vw; */
         /* height: 90vh; */
         height: auto;
         padding: 20px;

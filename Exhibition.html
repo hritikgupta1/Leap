@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promotions - Lilly Events and Promotions</title>
+    <title>Exhibition - Lilly Events and Promotions</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
@@ -13,9 +13,9 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             /* padding: 15px 0; */
-            height: 70vh;
+            height: 90vh;
             /* background-color: #0707075d; */
-            background-color: #c2bdbd34;
+            background-color: #0c0b0b48;
             /* color: #333; */
             /* display: flex; */
             /* align-items: center; */
@@ -31,25 +31,13 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url("images/promotions_bck1.jpeg") no-repeat center center/cover;
+            background: url("images/exhibition_bck.jpg") no-repeat center center/cover;
             background-attachment: fixed;
-            opacity: 0.6;
+            opacity: 0.7;
             /* Adjust this value for desired transparency */
             z-index: -1;
         }
 
-        /* Hero Section */
-        .hero {
-            height: 50vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: rgb(255, 255, 255);
-            font-size: 2rem;
-            font-weight: bold;
-            font-weight: bold;
-        }
 
         /* Services Section */
         .services {
@@ -101,6 +89,21 @@
             transform: scale(1.05);
         }
 
+        .Exhibition_Intro {
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-size: 2rem;
+            font-weight: bold;
+            font-weight: bold;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+
         @media screen and (max-width: 768px) {
 
             header {
@@ -109,7 +112,7 @@
                 /* margin: 0; */
                 /* padding: 15px 0; */
                 height: auto;
-                background-color: #66636356;
+                background-color: #0c0b0b48;
                 /* color: #333; */
                 /* display: flex; */
                 /* align-items: center; */
@@ -125,9 +128,9 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background: url("images/promotions_bck1.jpeg") no-repeat center center/cover;
+                background: url("images/exhibition_bck.jpg") no-repeat center center/cover;
                 background-attachment: fixed;
-                opacity: 0.6;
+                opacity: 0.5;
                 /* Adjust this value for desired transparency */
                 z-index: -1;
             }
@@ -160,18 +163,18 @@
                 width: auto;
             }
 
-            .hero {
-                height: 70vh;
+            .Exhibition_Intro {
+                height: auto;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
-                color: white;
+                color: rgb(255, 255, 255);
                 font-size: 2rem;
-                font-weight: 800;
+                font-weight: normal;
+                padding: 90px 20px;
                 flex-wrap: wrap;
                 align-content: center;
-                padding: 10px;
             }
         }
     </style>
@@ -199,8 +202,9 @@
             </ul>
         </nav> -->
         <!-- Hero Section -->
-        <section class="hero">
-            <h1>Boost Your Brand with Our Promotions</h1>
+        <section class="Exhibition_Intro">
+            <h1>Welcome to Our Exhibitions</h1>
+            <p>Discover our latest exhibitions showcasing innovation, creativity, and cutting-edge solutions.</p>
         </section>
     </header>
 
@@ -208,51 +212,51 @@
     <!-- Services Section -->
     <section class="services">
         <div class="service-box">
-            <i class="fas fa-bullhorn"></i>
-            <h3>Brand Activations</h3>
-            <p>We create immersive experiences to strengthen brand engagement.</p>
+            <i class="fas fa-briefcase"></i> <!-- Trade Show Icon -->
+            <h3>Trade Shows</h3>
+            <p>We organize professional trade shows to connect businesses and consumers effectively.</p>
         </div>
         <div class="service-box">
-            <i class="fas fa-chart-line"></i>
-            <h3>Digital Promotions</h3>
-            <p>From social media marketing to influencer collaborations, we enhance your digital presence.</p>
+            <i class="fas fa-bullhorn"></i> <!-- Product Launch Icon -->
+            <h3>Product Launches</h3>
+            <p>Exclusive exhibition setups to showcase and launch your latest products with impact.</p>
         </div>
         <div class="service-box">
-            <i class="fas fa-print"></i>
-            <h3>Print & Outdoor Ads</h3>
-            <p>Billboards, posters, and flyers to make your brand stand out in the real world.</p>
+            <i class="fas fa-industry"></i> <!-- Industry Expo Icon -->
+            <h3>Industry Expos</h3>
+            <p>Bringing together industry leaders and brands under one roof for networking and growth.</p>
         </div>
         <div class="service-box">
-            <i class="fas fa-lightbulb"></i>
-            <h3>Customized Campaigns</h3>
-            <p>Unique marketing strategies tailored to your business goals.</p>
+            <i class="fas fa-palette"></i> <!-- Interactive Booths Icon -->
+            <h3>Interactive Booths</h3>
+            <p>Engaging and innovative booth designs to capture audience attention and enhance brand visibility.</p>
         </div>
     </section>
 
     <!-- Image Gallery -->
     <section class="gallery">
-        <h2>Our Promotional Work</h2>
+        <h2>Our Exhibitional Work</h2>
         <div class="gallery-grid">
-            <img src="images/promotion_img1.jpeg" alt="Image 1" class="gallery-item">
-            <img src="images/promotion_img2.jpeg" alt="Image 2" class="gallery-item">
-            <img src="images/promotion_img3.jpeg" alt="Image 3" class="gallery-item">
-            <img src="images/promotion_img4.jpeg" alt="Image 4" class="gallery-item">
-            <img src="images/promotion_img5.jpeg" alt="Image 5" class="gallery-item">
-            <img src="images/promotion_img6.jpeg" alt="Image 6" class="gallery-item">
-            <img src="images/promotion_img7.jpeg" alt="Image 7" class="gallery-item">
-            <img src="images/promotion_img8.jpeg" alt="Image 8" class="gallery-item">
-            <img src="images/promotion_img9.jpeg" alt="Image 9" class="gallery-item">
-            <img src="images/promotion_img10.jpeg" alt="Image 10" class="gallery-item">
-            <img src="images/promotion_img11.jpeg" alt="Image 11" class="gallery-item">
-            <img src="images/promotion_img12.jpeg" alt="Image 12" class="gallery-item">
-            <img src="images/promotion_img13.jpeg" alt="Image 13" class="gallery-item">
-            <img src="images/promotion_img14.jpeg" alt="Image 14" class="gallery-item">
-            <img src="images/promotion_img15.jpeg" alt="Image 15" class="gallery-item">
-            <img src="images/promotion_img16.jpeg" alt="Image 16" class="gallery-item">
-            <img src="images/promotion_img17.jpeg" alt="Image 17" class="gallery-item">
-            <img src="images/promotion_img18.jpeg" alt="Image 18" class="gallery-item">
-            <img src="images/promotion_img19.jpeg" alt="Image 19" class="gallery-item">
-            <img src="images/promotion_img20.jpeg" alt="Image 20" class="gallery-item">
+            <img src="images/exhibition_img1.jpg" alt="Image 1" class="gallery-item">
+            <img src="images/exhibition_img2.jpg" alt="Image 2" class="gallery-item">
+            <img src="images/exhibition_img3.jpg" alt="Image 3" class="gallery-item">
+            <img src="images/exhibition_img4.jpg" alt="Image 4" class="gallery-item">
+            <img src="images/exhibition_img5.jpg" alt="Image 5" class="gallery-item">
+            <img src="images/exhibition_img6.jpg" alt="Image 6" class="gallery-item">
+            <img src="images/exhibition_img7.jpg" alt="Image 7" class="gallery-item">
+            <img src="images/exhibition_img8.jpg" alt="Image 8" class="gallery-item">
+            <img src="images/exhibition_img9.jpg" alt="Image 9" class="gallery-item">
+            <img src="images/exhibition_img10.jpg" alt="Image 10" class="gallery-item">
+            <img src="images/exhibition_img11.jpg" alt="Image 11" class="gallery-item">
+            <img src="images/exhibition_img12.jpg" alt="Image 12" class="gallery-item">
+            <img src="images/exhibition_img13.jpg" alt="Image 13" class="gallery-item">
+            <img src="images/exhibition_img14.jpg" alt="Image 14" class="gallery-item">
+            <img src="images/exhibition_img15.jpg" alt="Image 15" class="gallery-item">
+            <img src="images/exhibition_img16.jpg" alt="Image 16" class="gallery-item">
+            <img src="images/exhibition_img17.jpg" alt="Image 17" class="gallery-item">
+            <img src="images/exhibition_img18.jpg" alt="Image 18" class="gallery-item">
+            <img src="images/exhibition_img19.jpg" alt="Image 19" class="gallery-item">
+            <img src="images/exhibition_img20.jpg" alt="Image 20" class="gallery-item">
         </div>
     </section>
 
