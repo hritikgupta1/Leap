@@ -22,7 +22,7 @@
             /* text-align: center; */
             z-index: 1;
         }
-
+        
         header::before {
             content: "";
             position: absolute;
@@ -37,13 +37,51 @@
             z-index: -1;
         }
 
+        /* comment this section and section::before after adding cards */
+        section {
+            position: relative;
+            font-family: 'Poppins', sans-serif;
+            /* background-color: #00000070; */
+            margin: 0;
+            /* padding: 15px 0; */
+            height: 65vh;
+            /* color: #333; */
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            /* text-align: center; */
+            /* z-index: 1; */
+        }
+        section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("images/events_await.jpg") no-repeat center center/cover;
+            background-attachment: fixed;
+            opacity: 0.7;
+            /* Adjust this value for desired transparency */
+            z-index: -1;
+        }
+
+        /* comment below section h1 after adding cards */
+        section h1{
+
+            padding-top: 130px;
+        }
+
+
         .hero-text {
             font-size: 2.5rem;
             font-weight: bold;
             text-transform: uppercase;
             animation: fadeIn 2s ease-in-out;
             text-align: center;
+
         }
+
 
         @keyframes fadeIn {
             from {
@@ -198,10 +236,17 @@
         <h1 class="hero-text">Exciting Events Await!</h1>
     </header>
     <section>
-        <h1 style="text-align: center; font-size: 30px;">Upcoming Events</h1>
+        <!-- <h1 style="text-align: center; font-size: 30px;">Upcoming Events</h1> -->
+        <h1 style="text-align: center; font-size: 30px;">Upcoming Events Soon!</h1>
+
+        <!-- comment above line and uncomment commmented line -->
+
 
     </section>
-    <section class="events">
+
+    <!-- uncomment below section after adding genuine cards -->
+
+    <!-- <section class="events">
 
         <div class="event-card">
             <h2>Job Fair 2025</h2>
@@ -266,7 +311,7 @@
             <p><strong>Description:</strong> Join our expert panel for career advice and job market insights.</p>
             <p class="countdown" id="countdown6"></p>
         </div>
-    </section>
+    </section> -->
 
     <footer>
         <div class="footer-bg"></div>
@@ -369,12 +414,15 @@
         }
 
         // Example: Event starts on March 20, 2025, and ends on March 22, 2025
-        startCountdown("March 30, 2025 13:30:00", "March 30, 2025 18:00:00", "countdown1");
-        startCountdown("April 03, 2025 10:30:00", "April 03, 2025 18:00:00", "countdown2");
-        startCountdown("March 27, 2025 13:30:00", "March 27, 2025 18:00:00", "countdown3");
-        startCountdown("April 10, 2025 10:30:00", "April 10, 2025 18:00:00", "countdown4");
-        startCountdown("March 14, 2025 13:30:00", "March 14, 2025 18:00:00", "countdown5");
-        startCountdown("March 09, 2025 10:30:00", "March 09, 2025 18:00:00", "countdown6");
+
+        //uncomment below after adding genuine events for starting timer
+
+        // startCountdown("March 30, 2025 13:30:00", "March 30, 2025 18:00:00", "countdown1");
+        // startCountdown("April 03, 2025 10:30:00", "April 03, 2025 18:00:00", "countdown2");
+        // startCountdown("March 27, 2025 13:30:00", "March 27, 2025 18:00:00", "countdown3");
+        // startCountdown("April 10, 2025 10:30:00", "April 10, 2025 18:00:00", "countdown4");
+        // startCountdown("March 14, 2025 13:30:00", "March 14, 2025 18:00:00", "countdown5");
+        // startCountdown("March 09, 2025 10:30:00", "March 09, 2025 18:00:00", "countdown6");
 
 
     </script>

@@ -61,10 +61,11 @@ header {
 header img {
     width: 10vw;
     height: auto;
-    mix-blend-mode: multiply;
+    /* mix-blend-mode:multiply; */
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    /* z-index: 100; */
 }
 
 /* Dropdown Styling */
@@ -1006,11 +1007,30 @@ footer {
         /* margin-right: 80px; */
         margin-top: 330px;
     }
-
-
-
+    
+    
+    
 }
-
+@media screen and (min-width: 340px) and (max-width: 429px){
+    .intro_container {
+        background-color: #ff8000;
+        height: auto;
+        width: fit-content;
+        /* margin-right: 80px; */
+        margin-top: 230px;
+    }
+    
+}
+@media screen and (min-width: 430px) and (max-width: 495px){
+    .intro_container {
+        background-color: #ff8000;
+        height: auto;
+        width: fit-content;
+        /* margin-right: 80px; */
+        margin-top: 250px;
+    }
+    
+}
 @media screen and (min-width: 321px) and (max-width: 425px) {
     .service-container {
         display: flex;

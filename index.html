@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon" type="png" href="images/leapIcon.png">
     <title>Home - Lilly Events and Promotions</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -21,7 +22,7 @@
             overflow: hidden;
             height: auto;
             z-index: -1;
-            background-color: #c7c5c5fd;
+            background-color: #707070fd;
         }
 
         /* Slides container */
@@ -89,45 +90,81 @@
                 top: 0;
                 right: 0;
                 left: 0;
-                height: 50vh;
+                height: auto;
                 /* Ensure images scale proportionally */
                 display: block;
                 margin: 0px;
-                
+
                 overflow: hidden;
             }
         }
-        @media screen and (min-width: 769px) and (max-width: 842px){
+
+        /* @media screen and (min-width: 769px) and (max-width: 842px){
             .slide img {
                 width: 100vw;
                 top: 0;
                 right: 0;
                 left: 0;
                 height: 70vh;
-                /* Ensure images scale proportionally */
+                
                 display: block;
                 margin: 0px;
                 
                 overflow: hidden;
             }
-        }
-        @media screen and (min-width: 843px) and (max-width: 998px) {
+        } */
+        @media screen and (min-width: 843px) and (max-width: 905px) {
             .slide img {
                 width: 100vw;
                 top: 0;
                 right: 0;
                 left: 0;
-                height: 115vh;
-                /* Ensure images scale proportionally */
+                height: auto;
+
                 display: block;
                 margin: 0px;
-                
+
                 overflow: hidden;
             }
-            
 
+
+            .intro_container {
+                background-color: #ff8000;
+                height: auto;
+                width: fit-content;
+                /* margin-right: 80px; */
+                margin-top: 145px;
+                opacity: 0.8;
+            }
         }
-        @media screen and (min-width: 999px){
+
+        @media screen and (min-width: 906px) and (max-width: 912px) {
+            .slide img {
+                width: 100vw;
+                top: 0;
+                right: 0;
+                left: 0;
+                height: fit-content;
+
+                display: block;
+                margin: 0px;
+
+                overflow: hidden;
+            }
+
+            .intro_container {
+                background-color: #ff8000;
+                height: auto;
+                width: fit-content;
+                margin-right: 80px;
+                margin-top: 150px;
+                opacity: 0.8;
+            }
+            
+            
+        }
+        
+        @media screen and (min-width: 913px) and (max-width: 998px) {
             .slide img {
                 width: 100vw;
                 top: 0;
@@ -138,6 +175,31 @@
                 display: block;
                 margin: 0px;
                 
+                overflow: hidden;
+            }
+            .intro_container {
+                background-color: #ff8000;
+                height: auto;
+                width: fit-content;
+                margin-right: 80px;
+                margin-top: 200px;
+                opacity: 0.8;
+            }
+
+
+        }
+
+        @media screen and (min-width: 999px) {
+            .slide img {
+                width: 100vw;
+                top: 0;
+                right: 0;
+                left: 0;
+                height: auto;
+
+                display: block;
+                margin: 0px;
+
                 overflow: hidden;
             }
         }
@@ -249,7 +311,7 @@
             </div>
         </div>
     </section>
-    <section class="section4" >
+    <section class="section4">
         <h1 class="h1_section4">Our Government Associations</h1>
 
     </section>
